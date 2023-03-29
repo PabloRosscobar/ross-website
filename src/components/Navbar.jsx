@@ -1,15 +1,14 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { useState } from "react";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import menu from "../assets/menu.svg";
 import close from "../assets/close.svg";
 import Rossco_Logo2 from "../assets/Rossco_Logo2.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [active, setActive] = useState(``);
   const [toggle, setToggle] = useState(false);
-
   return (
     <nav
       className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}

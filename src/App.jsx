@@ -8,9 +8,9 @@ import {
   StarsCanvas,
 } from "./components";
 
-const App = () => {
-  const BrowserRouter = require("react-router-dom").BrowserRouter;
+import { BrowserRouter } from "react-router-dom";
 
+const App = () => {
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
